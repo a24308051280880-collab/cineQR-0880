@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinépolis</title>
+  <style>
+    /* Estilos básicos opcionales para mejorar la apariencia */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #002244; /* Azul característico */
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #00152a;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background-color: #ffcc00; /* Amarillo característico */
+      color: #000;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Títulos de sección */
+    .titulo-seccion {
+      text-align: center;
+      color: #002244;
+      border-bottom: 2px solid #ffcc00;
+      padding-bottom: 8px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    /* Cuadrícula fija de 4 columnas horizontales */
+    .grid-4-columnas {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+      gap: 20px; /* Espacio entre los elementos */
+    }
+
+    /* Tarjeta individual (películas o dulcería) */
+    .tarjeta {
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .tarjeta p {
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .tarjeta img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .precio {
+      color: #002244;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* Estilos para el formulario de Club Cinépolis */
+    .form-container {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #002244;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .btn-registrar {
+      width: 100%;
+      background-color: #002244;
+      color: #ffffff;
+      padding: 12px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn-registrar:hover {
+      background-color: #ffcc00;
+      color: #002244;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Cinépolis</h1>
+    <p>La Capital del Cine</p>
+  </header>
+
+  <!-- BARRA DE NAVEGACIÓN (Anclaje Interno) -->
+  <nav>
+    <ul>
+      <li><a href="#cartelera">Cartelera</a></li>
+      <li><a href="#dulceria">Dulcería</a></li>
+      <li><a href="#club-cinepolis">Club Cinépolis</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- SECCIÓN CARTELERA -->
+    <section id="cartelera">
+      <h2 class="titulo-seccion">Cartelera</h2>
+      
+      <div class="grid-4-columnas">
+        <div class="tarjeta">
+          <p>Street Fighter</p>
+          <img src="streetfighter.jpg" alt="Street Fighter">
+        </div>
+
+        <div class="tarjeta">
+          <p>El Laberinto del Fauno</p>
+          <img src="laberintodelfauno.jpg" alt="El Laberinto del Fauno">
+        </div>
+
+        <div class="tarjeta">
+          <p>Avengers Doomsday</p>
+          <img src="avengersdoomsday.jpg" alt="Avengers Doomsday">
+        </div>
+
+        <div class="tarjeta">
+          <p>Avengers Endgame</p>
+          <img src="avengersendgame.jpg" alt="Avengers Endgame">
+        </div>
+
+        <div class="tarjeta">
+          <p>Your Name</p>
+          <img src="yourname.jpg" alt="Your Name">
+        </div>
+
+        <div class="tarjeta">
+          <p>Resident Evil: Noche Cero</p>
+          <img src="residentevil.jpg" alt="Resident Evil: Noche Cero">
+        </div>
+
+        <div class="tarjeta">
+          <p>La Noche del Demonio: Están Entre Nosotros</p>
+          <img src="lanochedeldemonio.jpg" alt="La Noche del Demonio">
+        </div>
+
+        <div class="tarjeta">
+          <p>La Venganza del Charro Negro</p>
+          <img src="lavenganzadelcharronegro.jpg" alt="La Venganza del Charro Negro">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DULCERÍA -->
+    <section id="dulceria">
+      <h2 class="titulo-seccion">Dulcería</h2>
+      
+      <div class="grid-4-columnas">
+        <div class="tarjeta">
+          <p>Palomitas Mantequilla</p>
+          <img src="palomitas.jpg" alt="Palomitas de Mantequilla">
+          <span class="precio">$100.00</span>
+        </div>
+
+        <div class="tarjeta">
+          <p>Combo Individual</p>
+          <img src="comboindividual.jpg" alt="Combo Individual">
+          <span class="precio">$199.00</span>
+        </div>
+
+        <div class="tarjeta">
+          <p>Combo Junior</p>
+          <img src="combojunior.jpg" alt="Combo Junior">
+          <span class="precio">$349.00</span>
+        </div>
+
+        <div class="tarjeta">
+          <p>Nachos y Refresco</p>
+          <img src="nachos.jpg" alt="Nachos y Refresco">
+          <span class="precio">$99.00</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CLUB CINÉPOLIS -->
+    <section id="club-cinepolis">
+      <h2 class="titulo-seccion">Registro Club Cinépolis</h2>
+      
+      <div class="form-container">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="numero-tarjeta">Número de Tarjeta Club Cinépolis:</label>
+            <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="Ej. 1234 5678 9012" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos">
+          </div>
+
+          <div class="form-group">
+            <label for="nivel">Nivel de Tarjeta:</label>
+            <select id="nivel" name="nivel">
+              <option value="fan">Fan</option>
+              <option value="fanatico">Fanático</option>
+              <option value="super-fanatico">Súper Fanático</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-registrar">Registrar Tarjeta</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
